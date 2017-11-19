@@ -7,7 +7,6 @@ pipeline {
         stage('Build') {
             steps {
                 bat 'build.bat' 
-                archiveArtifacts artifacts: '@sfp_jsrs_sounds/**/*'
             }
             post {
                 always {
@@ -15,5 +14,25 @@ pipeline {
                 }
             }
         }
+
+        stage('Archive Build') {
+            steps {
+                archiveArtifacts artifacts: '@sfp_jsrs_sounds/**/*'
+            }
+        }
+
+        stage('Publish to Steam Workshop') {
+            when {
+                branch 'master'
+            }
+
+            steps {
+                publishSteamWorkshop '1205570929', '@sfp_jsrs_sounds'
+            }
+        }
     }
+}
+
+void publishSteamWorkshop(String id, String mod) {
+    bat "\"C:\\Program Files (x86)\\Steam\\SteamApps\\common\\Arma 3 Tools\\Publisher\\PublisherCmd.exe\" update /id:$id /path:$mod"
 }

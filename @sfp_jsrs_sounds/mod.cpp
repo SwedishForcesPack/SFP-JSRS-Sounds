@@ -1,0 +1,10 @@
+﻿name = "SFP: JSRS Sounds";
+picture = "\sfp_config\data\Images\sfp_picture_ca.paa";
+logoSmall = "\sfp_config\data\logos\sfp_logo_small_ca.paa";
+logo = "\sfp_config\data\logos\sfp_logo_ca.paa";
+logoOver = "\sfp_config\data\logos\sfp_logoOver_ca.paa";
+action = "http://www.anrop.se";
+actionName = "Website";
+overview = "The Swedish mod that's been in development since Operation Flashpoint.";
+hideName = 0;
+hidePicture = 0;

@@ -21,17 +21,14 @@ class CfgWeapons
     {
         class Single: Mode_SemiAuto
         {
-            class Single: Mode_SemiAuto
+            class BaseSoundModeType;
+            class StandardSound: BaseSoundModeType
             {
-                class BaseSoundModeType;
-                class StandardSound: BaseSoundModeType
-                {
-                    soundSetShot[] = {"jsrs_P226_shot_soundset","jsrs_P226_shell_soundset","jsrs_9mm_reflector_1"};
-                };
-                class SilencedSound: BaseSoundModeType
-                {
-                    soundSetShot[] = {"jsrs_P226_shot_silenced_soundset","jsrs_P226_shell_soundset","jsrs_frame_caliber_9mm_silenced"};
-                };
+                soundSetShot[] = {"jsrs_P226_shot_soundset","jsrs_P226_shell_soundset","jsrs_9mm_reflector_1"};
+            };
+            class SilencedSound: BaseSoundModeType
+            {
+                soundSetShot[] = {"jsrs_P226_shot_silenced_soundset","jsrs_P226_shell_soundset","jsrs_frame_caliber_9mm_silenced"};
             };
         };
     };

@@ -21,17 +21,14 @@ class CfgWeapons
     {
         class Single: Mode_SemiAuto
         {
-            class Single: Mode_SemiAuto
+            class BaseSoundModeType;
+            class StandardSound: BaseSoundModeType
             {
-                class BaseSoundModeType;
-                class StandardSound: BaseSoundModeType
-                {
-                    soundSetShot[] = {"jsrs_glock_shot_soundset","jsrs_glock_shell_soundset","jsrs_9mm_reflector_4"};
-                };
-                class SilencedSound: BaseSoundModeType
-                {
-                    soundSetShot[] = {"jsrs_glock_shot_silenced_soundset","jsrs_glock_shell_soundset","jsrs_9mm_SD_reflector_1"};
-                };
+                soundSetShot[] = {"jsrs_glock_shot_soundset","jsrs_glock_shell_soundset","jsrs_9mm_reflector_4"};
+            };
+            class SilencedSound: BaseSoundModeType
+            {
+                soundSetShot[] = {"jsrs_glock_shot_silenced_soundset","jsrs_glock_shell_soundset","jsrs_9mm_SD_reflector_1"};
             };
         };
     };

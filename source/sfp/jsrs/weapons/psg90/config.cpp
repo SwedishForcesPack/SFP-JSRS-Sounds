@@ -25,11 +25,11 @@ class CfgWeapons
             class BaseSoundModeType;
             class StandardSound: BaseSoundModeType
             {
-                soundSetShot[] = {"jsrs_mx2010_shot_soundset","jsrs_mx2010_shell_soundset","jsrs_12x7mm_reflector_1"};
+                soundSetShot[] = {"jsrs_awm_shot_soundset","jsrs_awm_shell_soundset","jsrs_12x7mm_reflector_1"};
             };
             class SilencedSound
             {
-                soundSetShot[] = {"jsrs_mx2010_shot_silenced_soundset","jsrs_mx2010_shell_soundset","jsrs_9x3mm_SD_reflector_1"};
+                soundSetShot[] = {"jsrs_awm_shot_silenced_soundset","jsrs_awm_shell_soundset","jsrs_9x3mm_SD_reflector_1"};
             };
         };
     };

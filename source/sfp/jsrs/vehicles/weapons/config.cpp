@@ -18,9 +18,11 @@ class CfgWeapons
     {
         class BaseSoundModeType 
         {
+            soundSetShot[] = {"jsrs_m240_shot_soundset", "jsrs_mg_echo_soundset"};
         };
         class StandardSound: BaseSoundModeType 
         {
+            soundSetShot[] = {"jsrs_m240_shot_soundset", "jsrs_mg_echo_soundset"};
         };
         
     };
@@ -28,36 +30,36 @@ class CfgWeapons
     {
         class BaseSoundModeType 
         {
-            soundSetShot[] = {"jsrs_m240_shot_soundset","jsrs_mg_chain_clipper_soundset","jsrs_9x3mm_reflector_1"};
+            soundSetShot[] = {"jsrs_m240_shot_soundset", "jsrs_mg_echo_soundset"};
         };
      
         class StandardSound: BaseSoundModeType 
         {
-            soundSetShot[] = {"jsrs_m240_shot_soundset","jsrs_mg_chain_clipper_soundset","jsrs_9x3mm_reflector_1"};
+            soundSetShot[] = {"jsrs_m240_shot_soundset", "jsrs_mg_echo_soundset"};
         };
     };
     class sfp_ksp58c_2 : sfp_ksp39_machinegun
     {
         class BaseSoundModeType 
         {
-            soundSetShot[] = {"jsrs_m240_shot_soundset","jsrs_mg_chain_clipper_soundset","jsrs_9x3mm_reflector_1"};
+            soundSetShot[] = {"jsrs_m240_shot_soundset", "jsrs_mg_echo_soundset"};
         };
      
         class StandardSound: BaseSoundModeType 
         {
-            soundSetShot[] = {"jsrs_m240_shot_soundset","jsrs_mg_chain_clipper_soundset","jsrs_9x3mm_reflector_1"};
+            soundSetShot[] = {"jsrs_m240_shot_soundset", "jsrs_mg_echo_soundset"};
         };
     };
     class sfp_ksp58c_3 : sfp_ksp39_machinegun
     {
         class BaseSoundModeType 
         {
-            soundSetShot[] = {"jsrs_m240_shot_soundset","jsrs_mg_chain_clipper_soundset","jsrs_9x3mm_reflector_1"};
+            soundSetShot[] = {"jsrs_m240_shot_soundset", "jsrs_mg_echo_soundset"};
         };
      
         class StandardSound: BaseSoundModeType 
         {
-            soundSetShot[] = {"jsrs_m240_shot_soundset","jsrs_mg_chain_clipper_soundset","jsrs_9x3mm_reflector_1"};
+            soundSetShot[] = {"jsrs_m240_shot_soundset", "jsrs_mg_echo_soundset"};
         };
     };
 };

@@ -11,13 +11,13 @@ class CfgPatches {
     };
 };
 
-class Mode_SemiAuto;
-class Mode_FullAuto;
-
 class CfgWeapons 
 {
-    class srifle_GM6_F;
-    
+    class GM6_base_F;
+    class srifle_GM6_F : GM6_base_F
+    {
+        class Single;
+    };
     class sfp_ag90_base : srifle_GM6_F
     {
         drysound[] = {"\jsrs_soundmod\jsrs_soundmod_snd_weapons\sounds\dry\m320r_dry.ogg", 1.5, 1, 15};
@@ -36,7 +36,7 @@ class CfgWeapons
         bullet12[] = {"\jsrs_soundmod\jsrs_soundmod_snd_weapons\sounds\shells\big\grass_4.ogg", 2.0099, 1, 10};
         soundbullet[] = {"bullet1", 0.08, "bullet2", 0.084, "bullet3", 0.084, "bullet4", 0.084, "bullet5", 0.093, "bullet6", 0.093, "bullet7", 0.074, "bullet8", 0.074, "bullet9", 0.084, "bullet10", 0.085, "bullet11", 0.083, "bullet12", 0.083};
         
-        class Single: Mode_SemiAuto
+        class Single: Single
         {
             class BaseSoundModeType;
             class StandardSound: BaseSoundModeType

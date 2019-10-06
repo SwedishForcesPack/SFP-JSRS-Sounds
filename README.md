@@ -4,14 +4,14 @@ Changes SFP weapons to JSRS sounds
 
 ## Build locally
 
-Make sure pboproject and any dependencies are installed from https://armaservices.maverick-applications.com/Products/MikerosDosTools/FileBrowserFree
+Follow HEMTT instructions on https://synixebrett.github.io/HEMTT/
 
-Double click build.bat to generate pbo files in @sfp_jsrs_sounds.
-Check source/temp for build logs.
+- Use `hemtt build` to build PBOs
+- Use `hemtt build --release` to create a release build
 
 ## Build on Jenkins
 
 Project uses Jenkinsfile to define build steps.
 Add the repository or organization to Jenkins as a pipeline job and it should pick it up automatically.
 
-It requires a node with the label "mikero" and pboproject must be available in PATH
+It requires a node with the label "hemtt" and hemtt must be available in PATH

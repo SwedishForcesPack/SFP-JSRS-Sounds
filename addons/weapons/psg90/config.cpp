@@ -42,7 +42,7 @@ class CfgWeapons
             {
                 soundSetShot[] = {"jsrs_awm_shot_soundset", "jsrs_dmr_echo_soundset"};
             };
-            class SilencedSound
+            class SilencedSound: BaseSoundModeType
             {
                 soundSetShot[] = {"jsrs_awm_shot_silenced_soundset", "jsrs_9x3mm_sd_reflector_1"};
             };

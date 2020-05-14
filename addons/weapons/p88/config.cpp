@@ -40,11 +40,11 @@ class CfgWeapons
             class BaseSoundModeType;
             class StandardSound: BaseSoundModeType
             {
-                soundSetShot[] = {"jsrs_glock_shot_soundset", "jsrs_9mm_reverb_soundset"};
+                soundSetShot[] = {"jsrs_rook40_shot_soundset", "jsrs_9mm_reverb_soundset"};
             };
             class SilencedSound: BaseSoundModeType
             {
-                soundSetShot[] = {"jsrs_glock_shot_silenced_soundset", "jsrs_9mm_sd_reverb_soundset"};
+                soundSetShot[] = {"jsrs_p07_shot_silenced_soundset", "jsrs_9mm_sd_reverb_soundset"};
             };
         };
     };

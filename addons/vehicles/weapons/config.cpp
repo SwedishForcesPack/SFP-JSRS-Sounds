@@ -11,6 +11,8 @@ class CfgPatches {
     };
 };
 
+class Mode_SemiAuto;
+
 class CfgWeapons 
 {
     class LMG_coax;
@@ -60,6 +62,50 @@ class CfgWeapons
         class StandardSound: BaseSoundModeType 
         {
             soundSetShot[] = {"jsrs_m240_shot_soundset", "jsrs_mg_chain_clipper_soundset"};
+        };
+    };
+
+    class CannonCore;
+    class cannon_120mm;
+    class sfp_cannon_base : cannon_120mm
+    {
+        class player;
+    };
+    class sfp_120mm_cannon : sfp_cannon_base
+    {
+        class player: player
+        {
+            class StandardSound
+            {
+                soundSetShot[] = {"jsrs_cannon120_shot_soundset"};
+            };
+        };
+    };
+
+    class sfp_akan_base;
+    class sfp_bofors_l70 : sfp_akan_base
+    {
+        class AP : CannonCore
+        {
+            class Single : Mode_SemiAuto
+            {
+                class BaseSoundModeType;
+                class StandardSound : BaseSoundModeType 
+                {
+                    soundSetShot[] = {"jsrs_autocannon_3_shot_soundset", "jsrs_autocannon_casing"};
+                };
+            };
+        };
+        class HE : CannonCore
+        {
+            class Single : Mode_SemiAuto
+            {
+                class BaseSoundModeType;
+                class StandardSound : BaseSoundModeType 
+                {
+                    soundSetShot[] = {"jsrs_autocannon_3_shot_soundset", "jsrs_autocannon_casing"};
+                };
+            };
         };
     };
 };

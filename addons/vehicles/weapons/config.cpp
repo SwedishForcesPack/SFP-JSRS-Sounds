@@ -108,4 +108,15 @@ class CfgWeapons
             };
         };
     };
+    class sfp_bofors_l70_AA : sfp_bofors_l70
+    {
+        class Auto : Mode_SemiAuto
+        {
+            class BaseSoundModeType;
+            class StandardSound : BaseSoundModeType 
+            {
+                soundSetShot[] = {"jsrs_autocannon_3_shot_soundset", "jsrs_autocannon_casing"};
+            };
+        };
+    };
 };

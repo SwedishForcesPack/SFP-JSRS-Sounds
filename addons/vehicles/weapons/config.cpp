@@ -83,6 +83,19 @@ class CfgWeapons
     };
 
     class sfp_akan_base;
+
+    class sfp_20mm_akan : sfp_akan_base
+    {
+        class auto : Mode_SemiAuto
+        {
+            class BaseSoundModeType;
+            class StandardSound: BaseSoundModeType 
+            {
+                soundSetShot[] = {"jsrs_autocannon_2_shot_soundset","jsrs_autocannon_casing"};
+            };
+        };
+    };
+
     class sfp_bofors_l70 : sfp_akan_base
     {
         class AP : CannonCore

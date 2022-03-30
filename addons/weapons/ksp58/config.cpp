@@ -17,7 +17,7 @@ class CfgWeapons
 {
     class Rifle_Long_Base_F;
     
-    class sfp_ksp58: Rifle_Long_Base_F
+    class sfp_ksp58_base: Rifle_Long_Base_F
     {
         drysound[] = {"\jsrs_soundmod_complete\JSRS_Soundmod_Soundfiles\weapons\dry\navid_dry.ogg", 1.5, 1, 15};
         reloadmagazinesound[] = {"\jsrs_soundmod_complete\JSRS_Soundmod_Soundfiles\weapons\reload\navid_reload.ogg", 2, 1, 35};
